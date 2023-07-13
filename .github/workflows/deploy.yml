@@ -57,8 +57,8 @@ jobs:
           key: ${{ secrets.VPS_PRIVATE_KEY }}
           script: |
             # Move build files to html folder
-            mv /var/www/html/build/* /var/www/html/
-            rm -rf /var/www/html/build/
+            mv /var/www/html/public/* /var/www/html/
+            rm -rf /var/www/html/public/
 
       - name: Restart Nginx
         uses: appleboy/ssh-action@master
